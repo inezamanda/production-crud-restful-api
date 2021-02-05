@@ -1,6 +1,7 @@
 const express = require('express')
 const produksiRouter = require("./router/produksi")
 const pegawaiRouter = require("./router/pegawai")
+const jabatanRouter = require('./router/jabatan')
 const app = express()
 
 //middleware
@@ -10,7 +11,12 @@ app.use(express.urlencoded({ extended: true })) // for parsing application/x-www
 
 app.use(produksiRouter)
 app.use(pegawaiRouter)
+app.use(jabatanRouter)
 
+app.get('/', function(req, res) {
+    console.log(req.url)
+    res.send('Hello, Selamat datang di Restfull API ROTI kami (INEZ, FAHRUL, RIVALDY)')
+})
 
 //middleware
 app.use((req, res, next) => {
