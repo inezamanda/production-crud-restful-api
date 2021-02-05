@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "nama" : "roti kacang",
+        "tanggal" : "01-02-2021"
+    },
+    {
+        "id" : 2,
+        "nama" : "roti coklat",
+        "tanggal" : "02-02-2021"
+    },
+    {
+        "id" : 3,
+        "nama" : "roti keju",
+        "tanggal" : "03-02-2021"
+    },
+    {
+        "id" : 4,
+        "nama" : "roti strawberry",
+        "tanggal" : "04-02-2021"
+    },
+    {
+        "id" : 5,
+        "nama" : "roti tawar",
+        "tanggal" : "05-02-2021"
+    }
+]
