@@ -1,9 +1,18 @@
 const express = require('express')
 const produksiRouter = require("./router/produksi")
+const pegawaiRouter = require("./router/pegawai")
 const app = express()
 
-app.use(produksiRouter)
+//middleware
+app.use(express.json())
+app.use(express.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 
+
+app.use(produksiRouter)
+app.use(pegawaiRouter)
+
+
+//middleware
 app.use((req, res, next) => {
     res.status(404).json({
         status: "fail",
